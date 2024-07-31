@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    width: .3rem;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: #12f7ff;
+    border-radius: 5rem;
+}
+.box{
+    -webkit-box-reflect:below
+    1px linear-gradient(transparent,#0005);
+
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,  0 0 25px #03e9f4 , 0 0 100px #03e9f4;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.main{
+    height: auto;
+    width: auto;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+
+    
+}
+header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,  0 0 20px #03e9f4 , 0 0 50px #03e9f4;
+    background-color: black;
+   
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  
+}
+
+.logo::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.3);
+    transform: scaleY(-1);
+    text-align: center;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+span {
+    color: #12f7ff;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    display: inline-block;
+    color: white; /* Changed default text color to black for visibility */
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s; /* Smooth transition effect */
+    font-size: 18px;
+
+}
+
+.navlist a.active {
+    color: #12f7ff;
+}
+
+.navlist a:hover {
+    color: #12f7ff;
+}
+
+#menu-icon {
+    font-size: .8rem;
+    z-index: 10001;
+    margin-left: 25px;
+    border-radius: 3px;
+    display: none;
+}
+
+
+
+
+
+.back-img{
+    background-image: url('./images/background\ p.png'); /* Path to your image */
+    background-size: cover;   /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.centered-content {
+    text-align: center; /* Center text within the div */
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center horizontally */
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text within the containers */   
+}
+
+.container-heading {
+    display: flex;
+    flex-direction: column; /* Stack children vertically (if any) */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100px;
+    width: 100%; /* Adjust or specify a max-width if needed */
+    margin-top: 20px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 100px; /* Space between the two containers */
+    max-width: 1200px; /* Max width for the content container */
+}
+
+.left-container, .right-container {
+    padding: 15px; /* Example padding */
+   width: 100%;
+}
+
+
+
+.about-txt {
+    font-size: 18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align text to the left for consistent line starts */
+    width: 100%; /* Ensure the text takes full width of the container */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    word-wrap: break-word; /* Break long words if necessary */
+
+}
+
+.about-txt-p{
+    font-size: 18px;
+    color: #a4a4a4;
+    text-transform: initial;
+    line-height: 1.8;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align text to the left for consistent line starts */
+    width: 100%; /* Ensure the text takes full width of the container */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    word-wrap: break-word; /* Break long words if necessary */
+}
+
+.contact-info {
+    display: flex; /* Align child elements inline */
+    flex-direction: row; /* Align items in a row */
+    gap: 15px; /* Space between phone and email */
+    width: 100%; /* Ensure the contact-info takes full width of the container */
+}
+
+.phone, .email {
+    flex: 1; /* Allow each element to grow and fill available space equally */
+    font-size: 16px; /* Font size for text */
+    color: #333; /* Text color */
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    line-height: 1.8;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align text to the left for consistent line starts */
+    padding: 5px; /* Optional padding */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 25px;  
+    width: 100%;
+    
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #0c0c0c;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,  0 0 20px #03e9f4 , 0 0 50px #03e9f4;
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card h4 , h5 , h3 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.img-card {
+    flex: 1 1 calc(25% - 20px); /* Four images per row, adjust margin as needed */
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-card img {
+    width: 100%; /* Images will take the full width of their container */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.text-input {
+    margin-left: 20px; /* Set left margin */
+    padding: 10px; /* Add padding inside the input */
+    font-size: 16px; /* Set font size */
+    border: 1px solid #ccc; /* Set border */
+    border-radius: 4px; /* Optional: round the corners */
+    width: calc(100% - 40px); /* Adjust width considering margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.social-media{
+    height: 30px;
+    width: 30px;
+    margin-top: 30px;
+    padding: 3px;
+    margin-right: 20px;
+}

@@ -1,0 +1,194 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    height: 0;
+    width: .3rem;
+}
+::-webkit-scrollbar-thumb {
+    background: #12f7ff;
+    border-radius: 5rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-item a.active {
+    color: #12f7ff;
+}
+.nav-item a:hover {
+    color: #12f7ff;
+}
+
+
+span {
+    color: #12f7ff;
+}
+.home-txt{
+    color: white;
+     font-size:70px;
+     font-weight:600; 
+     font-family:''
+}
+
+.back-img{
+    background-image: url('./images/background\ p.png'); /* Path to your image */
+    background-size: cover;   /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+
+.about-txt {
+    font-size: 18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align text to the left for consistent line starts */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    word-wrap: break-word; /* Break long words if necessary */
+    margin-top: 70px;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.about-txt-p{
+    font-size: 18px;
+    color: #a4a4a4;
+    text-transform: initial;
+    line-height: 1.8;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align text to the left for consistent line starts */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    word-wrap: break-word; /* Break long words if necessary */
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 25px;  
+    width: 100%;
+    
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #0c0c0c;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,  0 0 20px #03e9f4 , 0 0 50px #03e9f4;
+    padding: 20px;
+    width: 350px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card h4 , h5 , h3 {
+    margin-top: 5px;
+    text-align: left;
+}
+
+#p-txt{
+    font-size: 18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align text to the left for consistent line starts */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    word-wrap: break-word; /* Break long words if necessary */
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    gap: 40px;
+}
+.image-container {
+    margin: 10px;
+}
+.image-container img {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+
+
+
+.text-input {
+    margin-left: 20px; /* Set left margin */
+    padding: 10px; /* Add padding inside the input */
+    font-size: 16px; /* Set font size */
+    border: 1px solid #ccc; /* Set border */
+    border-radius: 4px; /* Optional: round the corners */
+    width: calc(100% - 40px); /* Adjust width considering margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+
+}
+.img-container {
+    margin: 5px;
+}
+
+.img-container img {
+    width: 30px; /* Set the desired width */
+    height: 30px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+
+.box{
+    -webkit-box-reflect:below
+    1px linear-gradient(transparent,#0005);
+
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,  0 0 25px #03e9f4 , 0 0 100px #03e9f4;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+    .nav-link {
+        margin-left: 0;
+        margin-right: 0;
+     
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
+
